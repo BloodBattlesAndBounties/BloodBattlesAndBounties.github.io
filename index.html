@@ -1,34 +1,32 @@
 <html>
+
 <head>
-    <title>BBB stuff</title>
+  <meta charset="UTF-8">
+  <title>BBB Stuff</title>
 </head>
 
 <body>
-    <script type="text/javascript">
-    int clicks1 = 0;
-    int clicks2 = 0;
-    function clickup1() {
-        clicks += 1;
-        document.getElementById("clicks1").innerHTML = clicks;
-    };
-      function clickdown1() {
-        clicks -= 1;
-        document.getElementById("clicks1").innerHTML = clicks;
-    };
-      function clickup2() {
-        clicks += 1;
-        document.getElementById("clicks2").innerHTML = clicks;
-    };
-      function clickdown2() {
-        clicks -= 1;
-        document.getElementById("clicks2").innerHTML = clicks;
-    };
-    </script>
-    <button type="button" onClick="clickup1()">u1</button>
-    <button type="button" onClick="clickdown1()">d1</button>
-    <button type="button" onClick="clickup2()">u2</button>
-    <button type="button" onClick="clickdown2()">d2</button>
-    <p>Clicks: <a id="click1s">0</a></p>
-    <p>Clicks: <a id="clicks2">0</a></p>
+  <div class="main">
 
-</body></html>
+    <h3>Click Counter</h3>
+    <button id="clickme">Click me: 0</button>
+    <button id="clickme2">Click me: 0</button>
+<script>
+    var button = document.getElementById("clickme"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "Click me: " + count;
+};
+    var button = document.getElementById("clickme2"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "Click me: " + count;
+};
+</script>
+
+  </div>
+</body>
+
+</html>
