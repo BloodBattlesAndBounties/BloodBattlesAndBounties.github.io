@@ -1,1 +1,30 @@
+<html>
+<head>
+    <title>BBB stuff</title>
+</head>
 
+<body>
+    <script type="text/javascript">
+    int clicks1 = 0;
+    int clicks2 = 0;
+    function clickup1() {
+        clicks += 1;
+        document.getElementById("clicks1").innerHTML = clicks;
+    };
+      function clickdown1() {
+        clicks -= 1;
+        document.getElementById("clicks1").innerHTML = clicks;
+    };
+      function clickup2() {
+        clicks += 1;
+        document.getElementById("clicks2").innerHTML = clicks;
+    };
+      function clickdown2() {
+        clicks -= 1;
+        document.getElementById("clicks2").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onClick="click()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+
+</body></html>
